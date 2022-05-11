@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="lBcVJh" name="SubSyzor" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
+              pluginVST3Category="Instrument" pluginFormats="buildAU,buildStandalone,buildVST3">
+  <MAINGROUP id="hxAvrv" name="SubSyzor">
+    <GROUP id="{200F3408-EF85-0BA7-DF5F-AEE820E59CB6}" name="Resources">
+      <FILE id="wQekqP" name="Background.png" compile="0" resource="1" file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/Background.png"/>
+      <FILE id="dD3DMj" name="Knob98.png" compile="0" resource="1" file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/Knob98.png"/>
+      <FILE id="UI5pXc" name="Knob101.png" compile="0" resource="1" file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/Knob101.png"/>
+      <FILE id="L76lDn" name="Knob256.png" compile="0" resource="1" file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/Knob256.png"/>
+      <FILE id="zNGtsi" name="BpButtonMix.png" compile="0" resource="1" file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/BpButtonMix.png"/>
+      <FILE id="cdzd8t" name="FilterButtonMix.png" compile="0" resource="1"
+            file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/FilterButtonMix.png"/>
+      <FILE id="zcx6uV" name="HpButtonMix.png" compile="0" resource="1" file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/HpButtonMix.png"/>
+      <FILE id="CQtXkv" name="LfoButtonMix.png" compile="0" resource="1"
+            file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/LfoButtonMix.png"/>
+      <FILE id="xWSamG" name="LpButtonMix.png" compile="0" resource="1" file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/LpButtonMix.png"/>
+      <FILE id="aLumK6" name="AmpButtonMix.png" compile="0" resource="1"
+            file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/AmpButtonMix.png"/>
+      <FILE id="AYlvla" name="LfoBackground.png" compile="0" resource="1"
+            file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/LfoBackground.png"/>
+      <FILE id="Ll2Ztt" name="MorphButtonMix.png" compile="0" resource="1"
+            file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/MorphButtonMix.png"/>
+      <FILE id="LAwiL2" name="AdsrBackground.png" compile="0" resource="1"
+            file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/AdsrBackground.png"/>
+    </GROUP>
+    <GROUP id="{913BF599-A0F5-F60C-0513-8C8E2C63FE65}" name="Source">
+      <FILE id="SqCMxe" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="TEBgz0" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="GAQeem" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="Ua1SC1" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="ri0fJz" name="Voice.cpp" compile="1" resource="0" file="Source/Voice.cpp"/>
+      <FILE id="sOxyl5" name="Voice.h" compile="0" resource="0" file="Source/Voice.h"/>
+      <FILE id="pD0zIh" name="FilmStripKnob.cpp" compile="1" resource="0"
+            file="Source/FilmStripKnob.cpp"/>
+      <FILE id="Zv8jpK" name="FilmStripKnob.h" compile="0" resource="0" file="Source/FilmStripKnob.h"/>
+      <FILE id="QWzitQ" name="dRowAudio_AudioOscilloscope.cpp" compile="1"
+            resource="0" file="Source/dRowAudio_AudioOscilloscope.cpp"/>
+      <FILE id="a7oZs2" name="dRowAudio_AudioOscilloscope.h" compile="0"
+            resource="0" file="Source/dRowAudio_AudioOscilloscope.h"/>
+      <FILE id="xCEsJ7" name="ImageButton.cpp" compile="1" resource="0" file="../../Documenti/GitHub/NQQ_SubSyzor-pt2/ImageButton.cpp"/>
+      <FILE id="dtruh1" name="ImageButton.h" compile="0" resource="0" file="../../Documenti/GitHub/NQQ_SubSyzor-pt2/ImageButton.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="SubSyzor"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="SubSyzor"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_osc" path="../../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_utils" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_core" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_dsp" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="C:\JUCE\modules"/>
+        <MODULEPATH id="juce_osc" path="C:\JUCE\modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_osc" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
