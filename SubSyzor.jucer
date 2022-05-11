@@ -3,28 +3,28 @@
 <JUCERPROJECT id="lBcVJh" name="SubSyzor" projectType="audioplug" useAppConfig="0"
               addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
               pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
-              pluginVST3Category="Instrument" pluginFormats="buildAU,buildStandalone,buildVST3">
+              pluginVST3Category="Instrument" pluginFormats="buildAU,buildVST3">
   <MAINGROUP id="hxAvrv" name="SubSyzor">
     <GROUP id="{200F3408-EF85-0BA7-DF5F-AEE820E59CB6}" name="Resources">
-      <FILE id="wQekqP" name="Background.png" compile="0" resource="1" file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/Background.png"/>
-      <FILE id="dD3DMj" name="Knob98.png" compile="0" resource="1" file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/Knob98.png"/>
-      <FILE id="UI5pXc" name="Knob101.png" compile="0" resource="1" file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/Knob101.png"/>
-      <FILE id="L76lDn" name="Knob256.png" compile="0" resource="1" file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/Knob256.png"/>
-      <FILE id="zNGtsi" name="BpButtonMix.png" compile="0" resource="1" file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/BpButtonMix.png"/>
-      <FILE id="cdzd8t" name="FilterButtonMix.png" compile="0" resource="1"
-            file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/FilterButtonMix.png"/>
-      <FILE id="zcx6uV" name="HpButtonMix.png" compile="0" resource="1" file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/HpButtonMix.png"/>
-      <FILE id="CQtXkv" name="LfoButtonMix.png" compile="0" resource="1"
-            file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/LfoButtonMix.png"/>
-      <FILE id="xWSamG" name="LpButtonMix.png" compile="0" resource="1" file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/LpButtonMix.png"/>
-      <FILE id="aLumK6" name="AmpButtonMix.png" compile="0" resource="1"
-            file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/AmpButtonMix.png"/>
-      <FILE id="AYlvla" name="LfoBackground.png" compile="0" resource="1"
-            file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/LfoBackground.png"/>
-      <FILE id="Ll2Ztt" name="MorphButtonMix.png" compile="0" resource="1"
-            file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/MorphButtonMix.png"/>
-      <FILE id="LAwiL2" name="AdsrBackground.png" compile="0" resource="1"
-            file="Source/Resources (Make sure you add the files inside here in your JUCE project in a folder seperate from source called Resources, then it should work)/AdsrBackground.png"/>
+      <FILE id="idLV0N" name="FilterButtonMix.png" compile="0" resource="1"
+            file="Resources/FilterButtonMix.png"/>
+      <FILE id="G7Ywey" name="HpButtonMix.png" compile="0" resource="1" file="Resources/HpButtonMix.png"/>
+      <FILE id="qqbLip" name="Knob98.png" compile="0" resource="1" file="Resources/Knob98.png"/>
+      <FILE id="egZbLj" name="Knob101.png" compile="0" resource="1" file="Resources/Knob101.png"/>
+      <FILE id="drB9ey" name="Knob256.png" compile="0" resource="1" file="Resources/Knob256.png"/>
+      <FILE id="CPjef8" name="LfoBackground.png" compile="0" resource="1"
+            file="Resources/LfoBackground.png"/>
+      <FILE id="LVdWSq" name="LfoButtonMix.png" compile="0" resource="1"
+            file="Resources/LfoButtonMix.png"/>
+      <FILE id="liBBe1" name="LpButtonMix.png" compile="0" resource="1" file="Resources/LpButtonMix.png"/>
+      <FILE id="blbejz" name="MorphButtonMix.png" compile="0" resource="1"
+            file="Resources/MorphButtonMix.png"/>
+      <FILE id="lfx0t4" name="AdsrBackground.png" compile="0" resource="1"
+            file="Resources/AdsrBackground.png"/>
+      <FILE id="DQ7hNS" name="AmpButtonMix.png" compile="0" resource="1"
+            file="Resources/AmpButtonMix.png"/>
+      <FILE id="nEx4dO" name="Background.png" compile="0" resource="1" file="Resources/Background.png"/>
+      <FILE id="MrigS1" name="BpButtonMix.png" compile="0" resource="1" file="Resources/BpButtonMix.png"/>
     </GROUP>
     <GROUP id="{913BF599-A0F5-F60C-0513-8C8E2C63FE65}" name="Source">
       <FILE id="SqCMxe" name="PluginProcessor.cpp" compile="1" resource="0"
